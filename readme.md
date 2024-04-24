@@ -79,13 +79,13 @@ Par exemple prédire si un email est un spam ou non ou prédire si une transacti
 
 3. Elle peut ne pas etre précise si le dataset est trop petit. 
 
-## les données et leur analyse
+## Les données et leur analyse
 
 
 
-## les algorithmes utilisés
+## Les algorithmes utilisés
 
 
 
-## conclusion
+## Conclusion
 
