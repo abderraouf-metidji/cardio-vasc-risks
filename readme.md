@@ -2,7 +2,9 @@
 
 ## Contexte du projet
 
+Il s'agit d'un projet de machine learning qui consiste en l'analyse et la prédiction des risques cardiovasculaires.
 
+Nous avons à notre disposition un dataset qui contient plusieurs variables relatives à ces risques qui nous permettront de déterminer à l'aide d'un algorithme de regression logistique si une personne est à risque ou non. 
 
 ## Veille Regression logistique
 
@@ -81,11 +83,18 @@ Par exemple prédire si un email est un spam ou non ou prédire si une transacti
 
 ## Les données et leur analyse
 
+Les données du dataset étaient relativement complètes. Le principal problème se trouvait au niveau des outliers et des données aberrantes qui ont été supprimés. Mis à part cela il n'y avait pas de données manquantes et pas de doublons.
 
+Avant de procéder à l'analyse nous avons commencencer par une transformation et un nettoyage des données. Nous avons transformé la variable de l'age qui était exprimé en jour afin de l'avoir en années. Nous avons également supprimer les outliers et valeurs aberrantes afin d'obtenir un dataset très homogène ce qui facilitera le travail à l'algorithme par la suite lors de la prédiction de données. 
+
+En ce qui concerne l'analyse nous remarquons principalement qu'il y a plus de femmes que d'hommes dans le dataset. Cependant, parmis ces deux populations différentes les répartitions de risques cardiovasculaires sont identiques, nous sommes à environ 50% de oui / non pour les populations.
+
+Au niveau des corréalations linéaires il y a principalement une corrélation entre les 2 niveau de tensions artérielles. Sinon, les autres corrélations sont plutôt faibles (< 0.5).
 
 ## Les algorithmes utilisés
 
+Pour effectuer ce projet nous avons décidé d'utiliser un algorithme de regression logistique. Lors de l'utilisation de cet algorithme nous avons testé plusieurs hyperparamètres mais nous n'avons pas remarqué de différence au niveau des résultats. 
 
+Nous utilisons un stratify afin d'avoir une population équivalente dans les données d'entraînement et de test.
 
-## Conclusion
-
+Suite à la prédiction de données nous observons que l'algorithme à une accuration d'environ 70% ce qui signifie qu'il prédit des résultats correctes à 70% ce qui reste un score raisonnable.
